@@ -182,9 +182,9 @@ const GeneralSetting = lazy(() => import("../components/ui/GeneralSetting"));
 const ForgotPassword = lazy(() => import("../pages/ForgotPassword"));
 const OrderSuccess = lazy(() => import("../pages/OrderSuccess"));
 const KroykoriAboutPage = lazy(() => import("../components/about/AboutPag"));
-const KroykoriContactPage = lazy(
-  () => import("../components/contact/KroykoriContactPage"),
-);
+// const KroykoriContactPage = lazy(
+//   () => import("../components/contact/KroykoriContactPage"),
+// );
 const FlashSaleDashboard = lazy(
   () => import("../components/FlashSaleDashboard"),
 );
@@ -245,7 +245,7 @@ export const router = createBrowserRouter(
           loader: ({ params }) => fetch(withBase(`api/products/${params.id}`)),
         },
         { path: "/about", element: loadable(KroykoriAboutPage) },
-        { path: "/contact", element: loadable(KroykoriContactPage) },
+        // { path: "/contact", element: loadable(KroykoriContactPage) },
         { path: "/order-success", element: loadable(OrderSuccess) },
         {
           path: "/categories",
