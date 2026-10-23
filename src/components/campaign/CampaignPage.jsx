@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
-import { CAMPAIGN_API_URL, campaignImageUrl, fetchJson } from '../components/campaign/campaignApi';
+import { CAMPAIGN_API_URL, campaignImageUrl, fetchJson } from '../campaign/campaignApi';
 
 const taka = (amount) => `৳${Number(amount ?? 0).toLocaleString('en-BD')}`;
 
